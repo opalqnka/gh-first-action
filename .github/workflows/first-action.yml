@@ -2,7 +2,10 @@ name:
   First Workflow
 
 on:
-  workflow_dispatch
+  # https://docs.github.com/en/enterprise-cloud@latest/actions/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow#using-activity-types-and-filters-with-multiple-events
+  # append : if more trigger events are specified
+  workflow_dispatch:
+  push:
 
 jobs:
   # specify job names - can be anything
